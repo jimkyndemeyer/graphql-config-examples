@@ -1,0 +1,8 @@
+type Query {
+    sharedBeta: Shared
+    betaAnother: BetaType
+}
+
+type BetaType {
+    foo: Boolean
+}

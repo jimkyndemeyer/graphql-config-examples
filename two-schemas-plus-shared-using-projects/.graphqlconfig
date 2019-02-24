@@ -1,0 +1,25 @@
+{
+  "name": "GraphQL Schemas",
+  "projects": {
+    "shared": {
+      "includes": ["shared/**"]
+    },
+    "alpha": {
+      "includes": ["alpha/**", "shared/**"]
+    },
+    "beta": {
+      "includes": ["beta/**", "shared/**"]
+    }
+  },
+  "extensions": {
+    "endpoints": {
+      "Default GraphQL Endpoint": {
+        "url": "http://localhost:8080/graphql",
+        "headers": {
+          "user-agent": "JS GraphQL"
+        },
+        "introspect": false
+      }
+    }
+  }
+}
