@@ -1,5 +1,5 @@
 {
-  "name": "GraphQL Schemas",
+  "name": "GraphQL Schemas with Shared Types",
   "projects": {
     "shared": {
       "includes": ["shared/**"]

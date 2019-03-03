@@ -1,0 +1,16 @@
+{
+  "name": "Relay GraphQL Schema",
+  "schemaPath": "relay-schema.graphql",
+  "includes": ["components/**"],
+  "extensions": {
+    "endpoints": {
+      "Default GraphQL Endpoint": {
+        "url": "http://localhost:8080/graphql",
+        "headers": {
+          "user-agent": "JS GraphQL"
+        },
+        "introspect": false
+      }
+    }
+  }
+}

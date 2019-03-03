@@ -1,0 +1,15 @@
+interface Node {
+    id: ID!
+}
+
+type Viewer implements Node {
+    id: ID!
+    userName: String!
+}
+
+type Query {
+    """
+    The currently logged in user that is viewing the product
+    """
+    viewer : Viewer
+}
