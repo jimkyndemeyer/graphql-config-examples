@@ -20,4 +20,4 @@ Introspection queries can also be executed by double-clicking endpoints in the s
 
 __Notes and comments__
 - If you're both developing the server schema and consuming it in a client, e.g. via component queries, you'll get the best tooling by having your schema expressed using GraphQL Schema Definition Language directly in your project. With that setup the plugin immediately discovers your schema, and you don't have to perform an introspection after server schema changes.
-- Tip: The re-run introspection action can be bound to a keyboards shortcut for convienience
+- Tip: The re-run introspection action can be bound to a keyboard shortcut for convienience
