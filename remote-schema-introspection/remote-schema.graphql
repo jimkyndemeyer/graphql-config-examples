@@ -1,0 +1,126 @@
+# This file was generated based on ".graphqlconfig" at Sun Mar 03 12:08:38 CET 2019. Do not edit manually.
+
+schema {
+    query: Query
+}
+
+"A Node represents a DOM Node"
+interface Node {
+    "The DOM attr of the Node"
+    attr(name: String!, selector: String): String
+    "The list of children elements from self"
+    children(selector: String): [Element]
+    "The html representation of the subnodes for the selected DOM"
+    content(selector: String): String
+    "The html representation of the selected DOM"
+    html(selector: String): String
+    "Returns True if the DOM matches the selector"
+    is(selector: String!): Boolean
+    "The immediately following sibling from self"
+    next(selector: String): Element
+    "The list of following siblings from self"
+    nextAll(selector: String): [Element]
+    "The parent element from self"
+    parent: Element
+    "The list of parent elements from self"
+    parents(selector: String): [Element]
+    "The immediately preceding sibling from self"
+    prev(selector: String): Element
+    "The list of preceding siblings from self"
+    prevAll(selector: String): [Element]
+    "Find elements using selector traversing down from self"
+    query(selector: String!): [Element]
+    "The siblings elements from self"
+    siblings(selector: String): [Element]
+    "The tag for the selected DOM"
+    tag(selector: String): String
+    "The text for the selected DOM"
+    text(selector: String): String
+}
+
+"""
+The Document Type represent any web page loaded and
+serves as an entry point into the page content
+"""
+type Document implements Node {
+    "The DOM attr of the Node"
+    attr(name: String!, selector: String): String
+    "The list of children elements from self"
+    children(selector: String): [Element]
+    "The html representation of the subnodes for the selected DOM"
+    content(selector: String): String
+    "The html representation of the selected DOM"
+    html(selector: String): String
+    "Returns True if the DOM matches the selector"
+    is(selector: String!): Boolean
+    "The immediately following sibling from self"
+    next(selector: String): Element
+    "The list of following siblings from self"
+    nextAll(selector: String): [Element]
+    "The parent element from self"
+    parent: Element
+    "The list of parent elements from self"
+    parents(selector: String): [Element]
+    "The immediately preceding sibling from self"
+    prev(selector: String): Element
+    "The list of preceding siblings from self"
+    prevAll(selector: String): [Element]
+    "Find elements using selector traversing down from self"
+    query(selector: String!): [Element]
+    "The siblings elements from self"
+    siblings(selector: String): [Element]
+    "The tag for the selected DOM"
+    tag(selector: String): String
+    "The text for the selected DOM"
+    text(selector: String): String
+    "The title of the document"
+    title: String
+}
+
+"""
+A Element Type represents an object in a Document
+"""
+type Element implements Node {
+    "The DOM attr of the Node"
+    attr(name: String!, selector: String): String
+    "The list of children elements from self"
+    children(selector: String): [Element]
+    "The html representation of the subnodes for the selected DOM"
+    content(selector: String): String
+    "The html representation of the selected DOM"
+    html(selector: String): String
+    "Returns True if the DOM matches the selector"
+    is(selector: String!): Boolean
+    "The immediately following sibling from self"
+    next(selector: String): Element
+    "The list of following siblings from self"
+    nextAll(selector: String): [Element]
+    "The parent element from self"
+    parent: Element
+    "The list of parent elements from self"
+    parents(selector: String): [Element]
+    "The immediately preceding sibling from self"
+    prev(selector: String): Element
+    "The list of preceding siblings from self"
+    prevAll(selector: String): [Element]
+    "Find elements using selector traversing down from self"
+    query(selector: String!): [Element]
+    "The siblings elements from self"
+    siblings(selector: String): [Element]
+    "The tag for the selected DOM"
+    tag(selector: String): String
+    "The text for the selected DOM"
+    text(selector: String): String
+    "Visit will visit the href of the link and return the corresponding document"
+    visit: Document
+}
+
+type Query {
+    "Visit the specified page"
+    page(
+        #The source of the page
+        source: String,
+        #The url of the page
+        url: String
+    ): Document
+}
