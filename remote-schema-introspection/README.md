@@ -4,7 +4,7 @@ This example demonstrates how to use the endpoints configured in `.graphqlconfig
 
 ![](graphql-config-introspect.png)
 
-With `introspection: true` the plugin asks at project startup whether to update the local schema using the configured endpoint.
+With `introspect: true` the plugin asks at project startup whether to update the local schema using the configured endpoint.
 
 ![](introspect-startup.png)
 
