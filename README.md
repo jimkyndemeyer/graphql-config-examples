@@ -1,4 +1,4 @@
-# GraphQL Config Project Examples for JS GraphQL IntelliJ Plugin
+# GraphQL Config Project Examples for JS GraphQL IntelliJ Plugin 2.x
 
 The folders in this repository demonstrate how to setup schema discovery for JS GraphQL IntelliJ Plugin using `.graphqlconfig` files.
 
