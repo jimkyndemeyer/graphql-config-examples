@@ -1,0 +1,14 @@
+{
+    viewer {
+        name
+        login
+        repositories(first: 10) {
+            edges {
+                node {
+                    name
+                    isFork
+                }
+            }
+        }
+    }
+}
