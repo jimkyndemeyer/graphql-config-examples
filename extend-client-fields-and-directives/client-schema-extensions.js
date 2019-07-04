@@ -6,7 +6,7 @@ const clientSchemaExtensions = gql`
     directive @client on FIELD
     
     extend type Query {
-        "Cient-only field that indicates whether the user is logged in"
+        "Client-only field that indicates whether the user is logged in"
         isLoggedIn: Boolean
     }
 `;
