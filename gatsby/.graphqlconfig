@@ -3,7 +3,7 @@
   "schemaPath": "schema.graphql",
   "extensions": {
     "endpoints": {
-      "Remote GraphQL Endpoint": {
+      "Gatsby GraphQL Endpoint": {
         "url": "http://localhost:8000/___graphql",
         "headers": {
           "user-agent": "JS GraphQL"
