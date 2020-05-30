@@ -3,8 +3,8 @@
   "schemaPath": "remote-schema.graphql",
   "extensions": {
     "endpoints": {
-      "Remote GraphQL Endpoint": {
-        "url": "http://gdom.graphene-python.org/graphql",
+      "Remote SWAPI GraphQL Endpoint": {
+        "url": "https://swapi-graphql.netlify.app/.netlify/functions/index",
         "headers": {
           "user-agent": "JS GraphQL"
         },
